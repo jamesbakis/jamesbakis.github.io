@@ -1,3 +1,13 @@
 body {
 background-color: #AFE1AF;
 }
+
+p, h3, a {
+    width: 400px;
+    position: relative;
+    left: 100px;
+}
+
+image {
+
+}
