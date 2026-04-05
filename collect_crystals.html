@@ -7,10 +7,10 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <h1>Collect Crystals Games</h1>
+    <h1 style="margin-left: 100px;">Collect Crystals Games</h1>
     
-    <div style="display: flex;">
-    <div>
+    <div style="display: flex; border: solid;">
+    <div style="border: solid; margin-left: 100px">
         <h3>Inspiration</h3>    
         <p>The idea of Collect Crystals began when
             I had the desire to create a simple Game
@@ -24,35 +24,70 @@
         </p>    
         
     
-    
-        <h3>1st Iteration</h3>
-        <a href="https://github.com/jamesbakis/Collect-Crystals">Github to Java code</a>
-        <p>The first iteration of Collect Crystals was
-            created using objects in java.
-        </p>
-
-        <h3>2nd Iteration</h3>
-        <a href="https://github.com/jamesbakis/Collect-Crystals-tkinter">Github to Python code</a>
-        <p>For my first recreation of Collect Crystals
-            I wanted to make it better than the first version
-            somehow. I searched for a way to create a UI for 
-            the game rather than having to run it in the terminal
-            to which I stumbled upon the tkinter library. Essentially
-            I drew images in a tkinter window for each cell of the grid and updated them
-            in a similar fashion to the first iteration of the game.
-        </p>
-
-        <h3>3rd Iteration</h3>
-        <p>**NOTE** As I write this I'm planning on recreating
-        Collect Crystals again as a javascript based project
-        so that I can run it and demonstrate it on a web browser 
-        </p>
+        <div style="color: red;">
+            <h3 >1st Iteration (JAVA)</h3>
+            <a href="https://github.com/jamesbakis/Collect-Crystals">Github to Java code</a>
+            <p>The first iteration of Collect Crystals was
+                created using objects in java. <br><br>I used a Key Listner library to implement
+                player movement using arrow keys, however it was inconvenient to use because 
+                a window had to be open and in focus above the terminal window to work. All 
+                the crystal and enemy spawn and position information was kept in this class to so it could be modified
+                on key presses. <br><br> The game field features "&lt &gt" as enemies, "**" as the crystals and "o7" 
+                or the symbol for a man saluting as the player character.
+            </p>
+        </div>
+        
+        <div style="color: green;">
+            <h3>2nd Iteration (PYTHON)</h3>
+            <a href="https://github.com/jamesbakis/Collect-Crystals-tkinter">Github to Python code</a>
+            <p >For my first recreation of Collect Crystals
+                I wanted to make it better than the first version
+                somehow. I searched for a way to create a UI for 
+                the game rather than having to run it in the terminal
+                to which I stumbled upon the tkinter library. Essentially
+                I drew images in a tkinter window for each cell of the grid and updated them
+                in a similar fashion to the first iteration of the game. <br><br>
+                A square class was used which holds the state of a square whether that be
+                an enemy (RED), crystal (BLUE), player (GREEN) or standard game square (WHITE).
+            </p>  
+        </div>
+        
+        <div>
+            <h3>3rd Iteration (JAVASCRIPT)</h3>
+            <p>**NOTE** As I write this I'm planning on recreating
+            Collect Crystals again as a javascript based project
+            so that I can run it and demonstrate it on a web browser 
+            </p>
+        </div>
+        
     </div>
-    <div style="text-align: right;">
-        <img src="CC java files.png" width = 150px height = 110px style="margin-right: 100px; margin-top: 200px">
-        <img src="CC java key listner.png" width = 370px height = 90px style="">
-        <img src="CC java field.png"; width = 220px height = 165px style="margin-right: 70px">
+    <div style="border: solid;">
+        <ul style="list-style-type: none; margin-left: 100px; border-color: red;" >
+            <li>
+                <img src="CC java files.png" width = 150px height = 110px style="">
+            </li>
+            <li>
+                <img src="CC java key listner.png" width = 370px height = 90px style="">
+            </li>
+            <li>
+                <img src="CC java field.png"; width = 220px height = 165px style="margin-right: 70px">
+            </li>
+        </ul>
+
+        <ul style="list-style-type: none; margin-left: 100px; border-color: green;" >
+            <li>
+                <img src="Collect Crystals Python Game Screen.png" width = 200px height = 200px style="">
+            </li>
+            <li>
+                <img src="Collect Crystals Python Files.png" width = 200px height = 90px style="">
+            </li>
+        </ul>
+        
+        
     </div>
-</div>
+    <div style="width: 500px">
+
+    </div>
+    </div>
 </body>
 </html>

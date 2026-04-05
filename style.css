@@ -4,10 +4,12 @@ background-color: #AFE1AF;
 
 p, h3, a {
     width: 400px;
-    position: relative;
-    left: 100px;
+    font-family: Arial;
 }
 
-image {
 
+ul {
+  padding: 10px;
+  border: solid;
+  border-width: 10px;
 }
