@@ -7,7 +7,11 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <h1 style="margin-left: 100px;">Collect Crystals Games</h1>
+    <div>
+        <h1 style="margin-left: 100px;">Collect Crystals Games</h1>
+        <a href="index.html" style="margin-left: 100px; font-size: x-large;">Main menu</a>
+    </div>
+    
     
     <div style="display: flex; border: solid;">
     <div style="border: solid; margin-left: 100px">
@@ -28,7 +32,8 @@
             <h3 >1st Iteration (JAVA)</h3>
             <a href="https://github.com/jamesbakis/Collect-Crystals">Github to Java code</a>
             <p>The first iteration of Collect Crystals was
-                created using objects in java. <br><br>I used a Key Listner library to implement
+                created using objects in java. <br><br> The enemy class was primarily just to maintain
+                the position of each enemy. <br><br>I used a Key Listner library to implement
                 player movement using arrow keys, however it was inconvenient to use because 
                 a window had to be open and in focus above the terminal window to work. All 
                 the crystal and enemy spawn and position information was kept in this class to so it could be modified
@@ -45,10 +50,13 @@
                 somehow. I searched for a way to create a UI for 
                 the game rather than having to run it in the terminal
                 to which I stumbled upon the tkinter library. Essentially
-                I drew images in a tkinter window for each cell of the grid and updated them
-                in a similar fashion to the first iteration of the game. <br><br>
+                Instead of classes I used arrays in main to store
+                the position of each object and then used the square class for 
+                each cell to determine what image is dispayed. <br><br>
                 A square class was used which holds the state of a square whether that be
-                an enemy (RED), crystal (BLUE), player (GREEN) or standard game square (WHITE).
+                an enemy (RED), crystal (BLUE), player (GREEN) or standard game square (WHITE). <br><br>
+                To determine if a collision with an enemy occured I checked an array containing every enemy position
+                to see if their position is equal to the player and if so the game ends.
             </p>  
         </div>
         
